@@ -1,0 +1,17 @@
+<header class="h-[68px] z-10 bg-gray-900 sticky top-0 flex justify-between px-10 items-center" >
+<div class="flex gap-5">
+    <img width="110" src="assets/pngwing.com.png" alt="Netflix Img">
+    <ul class=" flex items-center" *ngFor="let item of navlist">
+    <li class="text-neutral-200 cursor-pointer text-sm font-extralight hover:text-gray-500 transition-[1s]">{{item}}</li></ul>
+</div>
+<!-- Welcome User -->
+<div class="text-white flex items-center gap-4">
+    <div class="flex items-center gap-2">
+        <a href="/"><span>Welcome <strong>Amod</strong></span></a>
+        <img [src]="userImg" width="40" class="rounded-3xl" alt="user-img">
+
+    </div>
+    &nbsp; | &nbsp;
+    <a href="/">Singout</a>
+</div>
+</header>
